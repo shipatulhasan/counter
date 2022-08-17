@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Apps</title>
+  <!-- fontawsome cdn -->
+  <script src="https://kit.fontawesome.com/59949b2abf.js" crossorigin="anonymous"></script>
+  <!-- Tailwind connection -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          backgroundImage: {
+        'body': "url('./img/background.jpg')",
+        
+      },
+      fontFamily:{
+          'poppins':[ 'Poppins', 'sans-serif']
+      }
+          
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+    </style>
+</head>
+
+<body class="bg-white">
+  <main class="container mx-auto">
+    <section class="h-[85vh] lg:h-screen flex items-center justify-center ">
+      <div class="card flex flex-col items-center justify-center shadow-2xl rounded w-11/12 lg:w-3/4 xl:w-1/2 py-12 px-0  z-10 bg-white border-2 border-gray-400">
+        <h2 id="display" class="font-poppins text-6xl md:text-9xl text-center text-red-500 font-bold pb-5">
+          0
+        </h2>
+        <div class="grid grid-cols-3 gap-2">
+          <button id="plus" class="mx-auto bg-gray-200 hover:cursor-pointer  transform duration-300 font-bold  text-black py-1 px-4 rounded-full tracking-wider shadow-md">+
+          </button>
+          <button id="reset" class="mx-auto bg-red-500 hover:cursor-pointer  transform duration-300 font-bold  text-white py-1 px-4 rounded-full tracking-wider shadow-md">reset
+          </button>
+          <button id="minus" class="mx-auto bg-blue-600 hover:cursor-pointer  hover:text-gray-200 transform duration-300 font-bold  text-white py-1 px-4 rounded-full tracking-wider shadow-md">-
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="text-sm font-semibold text-gray-800 text-center py-5 xl:py-10">
+        Presented by Md. Shipatul Hasan Shakib
+      </p>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
